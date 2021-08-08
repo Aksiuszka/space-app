@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.img{
+    background: url(issmain.png) no-repeat center center/cover;
+  height: 100vh;
+  width:100%;
+  top:0;
+  left:0;
+  z-index: -1;
+  filter:blur(0px);
+  
+  
+}
+.loading-txt{
+    position:absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    font-size: 70px;
+    color:white;
+}
+body{
+    background-color: #020255;
+    z-index:-2;
+}
+.btn-wrapper{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.btn-one{
+    position:absolute;
+   top:50%;
+    left: 1%;
+    transform: translate(-1%, -50%);
+}
+.btn-two{
+    position:absolute;
+   top:50%;
+    right: 5%;
+    transform: translate(-5%, -50%);
+}
+
+button{
+    
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    position: relative;
+  margin: 2rem 3rem;
+  padding: 1rem 2rem;
+    border: 4px solid white;
+   background-color: transparent;
+   color:black;
+   cursor: pointer;
+   -webkit-appearance: none;
+   box-shadow: 
+   -1px -1px 3px rgba(255, 255, 255, 0.1),
+   -2px, -2px, 6px rgba(0, 0, 0, 0.8);
+}
+button::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -.6rem;
+    top: -.5rem;
+    z-index: -1;
+    background-color: white;
+    transition: all 200ms ease-out;
+  }
+  
+  button:hover::before {
+    top: 0;
+    left: 0;
+  }
+
+button:hover{
+  box-shadow: 
+  -1px -1px 3px rgba(255, 255, 255, 0.1),
+  -2px, -2px, 6px rgba(0, 0, 0, 0.8),
+  inset -2px -2px 10px rgba(255, 255, 255, 0.05),
+  inset 2px 2px 10px rgba(255, 255, 255, 0.5);
+  color:black;
+  background: white;
+  border: 4px solid black;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.custom-shape-divider-bottom-1628360971 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1628360971 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 260px;
+}
+
+.custom-shape-divider-bottom-1628360971 .shape-fill {
+    fill: #020253;
+}
+
+
+.header {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.7em;
+    margin-top:35px;
+    background-color: rgb(2, 2, 85) ;
+    color: white;  
+    z-index: 1;
+}
+.header h1:before,
+.header h1:after{
+    position:absolute;
+    content:attr(data-text);
+    padding: 15px;
+    width: 100%;
+    height:100%;
+    top:-20px;
+    left:0px;
+    background: #020253;
+    color: white;
+    overflow: hidden;
+}
+.header h1:before{
+    left: 3px;
+    text-shadow: -6px 0 black;
+    animation: glitch 2s linear reverse infinite;
+}
+.header h1:after{
+    left: -3px;
+    text-shadow: -6px 0 red;
+    animation: glitch2 2s linear reverse infinite;
+}
+
+@keyframes glitch {
+    0% {
+      clip: rect(132px, auto, 101px, 30px);
+    }
+    5% {
+      clip: rect(17px, auto, 94px, 30px);
+    }
+    10% {
+      clip: rect(40px, auto, 66px, 30px);
+    }
+    15% {
+      clip: rect(87px, auto, 82px, 30px);
+    }
+    20% {
+      clip: rect(137px, auto, 61px, 30px);
+    }
+    25% {
+      clip: rect(34px, auto, 14px, 30px);
+    }
+    30% {
+      clip: rect(133px, auto, 74px, 30px);
+    }
+    35% {
+      clip: rect(76px, auto, 107px, 30px);
+    }
+    40% {
+      clip: rect(59px, auto, 130px, 30px);
+    }
+    45% {
+      clip: rect(29px, auto, 84px, 30px);
+    }
+    50% {
+      clip: rect(22px, auto, 67px, 30px);
+    }
+    55% {
+      clip: rect(67px, auto, 62px, 30px);
+    }
+    60% {
+      clip: rect(10px, auto, 105px, 30px);
+    }
+    65% {
+      clip: rect(78px, auto, 115px, 30px);
+    }
+    70% {
+      clip: rect(105px, auto, 13px, 30px);
+    }
+    75% {
+      clip: rect(15px, auto, 75px, 30px);
+    }
+    80% {
+      clip: rect(66px, auto, 39px, 30px);
+    }
+    85% {
+      clip: rect(133px, auto, 73px, 30px);
+    }
+    90% {
+      clip: rect(36px, auto, 128px, 30px);
+    }
+    95% {
+      clip: rect(68px, auto, 103px, 30px);
+    }
+    100% {
+      clip: rect(14px, auto, 100px, 30px);
+    }
+  }
+  @keyframes glitch2 {
+    0% {
+      clip: rect(129px, auto, 36px, 30px);
+    }
+    5% {
+      clip: rect(36px, auto, 4px, 30px);
+    }
+    10% {
+      clip: rect(85px, auto, 66px, 30px);
+    }
+    15% {
+      clip: rect(91px, auto, 91px, 30px);
+    }
+    20% {
+      clip: rect(148px, auto, 138px, 30px);
+    }
+    25% {
+      clip: rect(38px, auto, 122px, 30px);
+    }
+    30% {
+      clip: rect(69px, auto, 54px, 30px);
+    }
+    35% {
+      clip: rect(98px, auto, 71px, 30px);
+    }
+    40% {
+      clip: rect(146px, auto, 34px, 30px);
+    }
+    45% {
+      clip: rect(134px, auto, 43px, 30px);
+    }
+    50% {
+      clip: rect(102px, auto, 80px, 30px);
+    }
+    55% {
+      clip: rect(119px, auto, 44px, 30px);
+    }
+    60% {
+      clip: rect(106px, auto, 99px, 30px);
+    }
+    65% {
+      clip: rect(141px, auto, 74px, 30px);
+    }
+    70% {
+      clip: rect(20px, auto, 78px, 30px);
+    }
+    75% {
+      clip: rect(133px, auto, 79px, 30px);
+    }
+    80% {
+      clip: rect(78px, auto, 52px, 30px);
+    }
+    85% {
+      clip: rect(35px, auto, 39px, 30px);
+    }
+    90% {
+      clip: rect(67px, auto, 70px, 30px);
+    }
+    95% {
+      clip: rect(71px, auto, 103px, 30px);
+    }
+    100% {
+      clip: rect(83px, auto, 40px, 30px);
+    }
+  }
+
+
+
+.wrap{
+    background: url(./Taieri.png);
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+}
+h2{
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 10px;
+}
+
+.table{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    background-color: rgb(2, 2, 85) ;
+    color: white;
+    border: 5px solid transparent;
+    width: 500px;
+    padding:50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+#mapid { height: 500px;
+width:700px; }
+
+.asteroid{
+    position:relative;
+    background: white;
+}
+.custom-shape-divider-top-1628423979 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1628423979 svg {
+    position: relative;
+    display: block;
+    width: calc(107% + 1.3px);
+    height: 161px;
+}
+
+.custom-shape-divider-top-1628423979 .shape-fill {
+    fill: #020253;
+}
